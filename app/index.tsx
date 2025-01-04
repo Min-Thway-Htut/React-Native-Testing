@@ -1,16 +1,11 @@
-import { Text, View } from "react-native";
-import Area from "@/components/Area";
-import InputField from "@/components/InputField";
-import { TextProvider } from "@/components/TextProvider";
+import React from 'react';
+import {Text} from 'react-native';
+import { NavigationContainer} from '@react-navigation/native';
+import StackNavigation from '@/navigation/StackNavigator';
 
-export default function Index() {
+export default function App() {
   return (
-    <TextProvider>
-       <View style={{backgroundColor: 'gray'}}>
-      <InputField />
-     <Area />
-    </View>
-    </TextProvider>
-
+   
+    <StackNavigation />
   );
-}
+};

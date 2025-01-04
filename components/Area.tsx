@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import { TextContext } from './TextProvider';
 
 const Area = () => {
